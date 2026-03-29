@@ -21,16 +21,20 @@ export default function AboutPage() {
   </div>
 </Section>
       <Section title="Video Introduction">
-        <div className="videoWrap">
-          <iframe
-            width="100%"
-            height="420"
-            src={profile.videoEmbedUrl}
-            title={profile.videoTitle}
-            allowFullScreen
-          />
-        </div>
-      </Section>
+  <div className="centerContent">
+    <div className="videoContainer">
+      <video
+        controls
+        preload="metadata"
+        className="videoPlayer"
+      >
+        <video autoPlay muted loop controls></video>
+        <source src="/videos/why-me.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</Section>
 
       <Section title="Interests">
         <div className="tags">
