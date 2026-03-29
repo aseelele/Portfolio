@@ -4,20 +4,27 @@ import { projects } from "@/lib/data";
 
 export default function ProjectsPage() {
   return (
-    <Section title="Projects" subtitle="Selected work and builds">
+    <Section title="Projects" subtitle="Technical work and presentation decks">
       <div className="grid">
-        {projects.map((p) => (
-          <div key={p.name} className="col6">
-            <Card title={p.name} meta={p.desc} bullets={p.bullets} tags={p.tags}>
-              {p.links?.length ? (
-                <div className="tags" style={{ marginTop: 10 }}>
-                  {p.links.map((l) => (
-                    <a key={l.href} className="tag" href={l.href} target="_blank" rel="noreferrer">
-                      {l.label}
-                    </a>
-                  ))}
-                </div>
-              ) : null}
+        {projects.map((project) => (
+          <div key={project.name} className="col6">
+            <Card
+              title={project.name}
+              meta={project.desc}
+              bullets={project.bullets}
+              tags={project.tags}
+            >
+              {project.links?.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="deckLink"
+                >
+                  {link.label}
+                </a>
+              ))}
             </Card>
           </div>
         ))}

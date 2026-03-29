@@ -1,17 +1,15 @@
-export default function Section({
-  title,
-  subtitle,
-  children,
-}: {
+type SectionProps = {
   title: string;
   subtitle?: string;
   children: React.ReactNode;
-}) {
+};
+
+export default function Section({ title, subtitle, children }: SectionProps) {
   return (
     <section className="section">
-      <div className="sectionHeader">
-        <h2 className="h2">{title}</h2>
-        {subtitle ? <div className="small">{subtitle}</div> : null}
+      <div className="sectionHead">
+        <h2 className="sectionTitle">{title}</h2>
+        {subtitle ? <p className="sectionSub">{subtitle}</p> : null}
       </div>
       {children}
     </section>

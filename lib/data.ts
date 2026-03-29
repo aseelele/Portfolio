@@ -1,30 +1,158 @@
 export const profile = {
   name: "Aseel Mohammed",
   location: "Toronto, ON",
-  headline: "Software engineering student building web apps, APIs, and data-driven tools.",
+  headline: "Computer Science student building digital tools, web apps, and sustainable solutions.",
   summary:
-    "Computer Science student with experience shipping features across modern web stacks and Python-based services. Comfortable collaborating in agile teams, translating UX into clean UI, and integrating backend workflows. Interested in analytics and applied ML in real products.",
+    "Computer Science student passionate about software engineering, app development, sustainability, and digitization. I enjoy building practical tools that solve real-world problems, improve workflows, and create meaningful impact for users and organizations.",
+
+  aboutEssay: `
+My name is Aseel Mohammed, and I am a Computer Science student at the Lassonde
+School of Engineering, York University, with a strong interest in digitization, structured
+problem-solving, and data-driven technologies such as machine learning and deep learning.
+I am motivated by identifying inefficiencies in real-world processes and transforming them
+into clear, structured, and scalable solutions. What distinguishes me is my ability to work
+through ambiguity, question assumptions, and apply reflective thinking to continuously
+improve how problems are understood and solved.
+I grew up in an environment that emphasized discipline, resilience, and personal
+responsibility. From an early age, I learned that meaningful growth comes from sustained
+effort and self-reflection rather than shortcuts. These experiences shaped my work ethic and
+encouraged me to take ownership of my learning and decisions. They also instilled in me a
+belief that improvement is an ongoing process built through consistency, accountability, and
+a willingness to learn from challenges.
+My decision to pursue Computer Science at York University was driven by my interest in
+problem-solving and the role technology plays in digitizing and improving systems. A
+defining academic moment in my journey was achieving a full score on a major board exam,
+which reinforced my confidence in my analytical abilities and confirmed my interest in
+tackling complex problems. Since then, I have gravitated toward work involving digitization,
+data organization, workflow optimization, and analytical reasoning, particularly in situations
+where problems are not clearly defined and require careful analysis.
+One of my most influential inspirations has been a university professor who emphasized the
+importance of self-learning and continuous development, especially in a rapidly evolving field
+like computer science. Rather than focusing only on course material, they motivated
+students to explore independent projects, tools, and technologies beyond the curriculum.
+This approach reshaped how I view learning, reinforcing the idea that success in computer
+science depends not only on technical knowledge, but on the ability to continuously adapt,
+learn, and grow.
+Through critical reflection and a SWOT analysis completed earlier in the course, I identified
+several strengths I bring to employers, including critical thinking, adaptability, structured
+problem-solving, and clear communication. I also recognized an area for growth: at times, I
+relied too heavily on external validation before fully trusting my own reasoning. To address
+this weakness, I developed SMART goals focused on independently analyzing workflows,
+documenting assumptions and constraints, proposing multiple solutions, and reflecting on
+how deeper analysis changes my initial approach. These goals are directly aligned with my
+development as a Computer Science student and support my long-term interest in
+digitization and data-driven problem-solving.
+My core values—integrity, growth, accountability, and impact—shape how I approach both
+academic and professional environments. I value doing work that improves processes,
+supports informed decision-making, and creates long-term value rather than temporary fixes.
+These values influence my work ethic by encouraging responsibility, openness to feedback,
+and a commitment to continuous learning, especially in technically demanding environments.
+My learning style is hands-on and reflective. I learn most effectively by applying concepts to
+real situations, evaluating outcomes, and refining my approach through reflection. In the
+workplace, this translates into a preference for environments that encourage
+experimentation, structured thinking, and feedback. I thrive in roles that involve digitization,
+data analysis, and continuous improvement, where learning is embedded into everyday
+problem-solving.
+As part of developing my professional identity, I have created a LinkedIn profile to
+intentionally present my skills, experiences, and interests. I understand that employers often
+form impressions quickly, and I aim to ensure that my digital presence accurately reflects
+both my technical direction and my growth mindset. This philosophy also guides how I
+approach my e-portfolio, which I view as a clear, scannable narrative of who I am, what I
+value, and how I approach complex problems.
+Curated Artifact and Explanation
+The artifact I selected combines a workflow diagram with the quote, “Learning how to learn is
+the most important skill in computer science.” Together, they represent both how I think and
+why I approach learning and problem-solving the way I do.
+The workflow illustrates my approach to digitization and critical thinking by showing the
+transition from an inefficient, unstructured real-world process to a structured, data-ready
+system. It begins with messy inputs such as inconsistent records and informal processes,
+followed by the identification of assumptions and constraints. Through digitization, these
+inputs are transformed into structured data that enables analysis, insight generation, and
+future machine learning applications. The final stage emphasizes reflection and iteration,
+reinforcing that learning and improvement continue even after a solution is implemented.
+The accompanying quote reflects a mindset that was strongly reinforced by my university
+professor and has become central to my development as a Computer Science student. It
+represents my belief that the ability to continuously learn, adapt, and reflect is more
+important than mastering any single tool or technology. Together, the workflow and quote
+capture my interest in digitization, my commitment to structured problem-solving, and my
+focus on long-term growth in data-driven and machine learning-oriented environments`,
+
+  videoTitle: "About Me Video",
+  videoEmbedUrl: "PASTE_YOUR_YOUTUBE_OR_DRIVE_EMBED_LINK_HERE",
+
   links: {
     github: "https://github.com/aseelele",
-    portfolio: "https://enabled-talent-website.vercel.app",
-    linkedin: "https://linkedin.com/in/your-link-here",
-    email: "mailto:youremail@example.com",
+    portfolio: "https://portfolio-navy-nine-mkbvszlrlb.vercel.app/",
+    linkedin: "https://www.linkedin.com/in/aseel-mohammed-733541251/",
+    email: "mailto:aseelsamer258@gmail.com",
+    resume: "/public/resume.pdf",
   },
+
   interests: [
-    "Full-stack product engineering",
-    "Applied machine learning + evaluation",
-    "Data pipelines and analytics",
-    "Cloud + developer tooling",
-    "Inclusive design and accessibility",
+    "Software engineering",
+    "App development",
+    "Sustainability and digitization",
+    "Workflow design and automation",
+    "Data-driven tools",
+    "Accessibility and inclusive design",
   ],
 };
 
 export const skills = {
-  languages: ["Python", "Java", "JavaScript/TypeScript", "C/C++", "Bash"],
-  webApis: ["HTML5", "CSS3", "React", "Next.js", "REST", "FastAPI"],
-  dataML: ["SQL", "Feature engineering", "Model experimentation", "Evaluation"],
-  tools: ["Git/GitHub", "Linux", "CI/CD basics", "Vercel", "Figma"],
-  concepts: ["OOP", "Data structures & algorithms", "Debugging", "Documentation"],
+  soft: [
+    "Communication",
+    "Leadership",
+    "Critical thinking",
+    "Problem solving",
+    "Teamwork",
+    "Adaptability",
+    "Public speaking",
+    "Organization",
+    "Time management",
+  ],
+
+  technical: [
+    "Python",
+    "Java",
+    "JavaScript",
+    "TypeScript",
+    "C",
+    "C++",
+    "Bash",
+    "MATLAB",
+    "HTML5",
+    "CSS3",
+    "React",
+    "Next.js",
+    "REST APIs",
+    "FastAPI",
+    "SQL",
+  ],
+
+  tools: [
+    "Git/GitHub",
+    "Linux",
+    "Vercel",
+    "Figma",
+    "Excel",
+    "Canva",
+    "Wix",
+    "AppSheet",
+    "CapCut",
+  ],
+
+  concepts: [
+    "Object-oriented programming",
+    "Data structures & algorithms",
+    "Debugging",
+    "Documentation",
+    "UI/UX thinking",
+    "Responsive design",
+    "Agile collaboration",
+    "Workflow optimization",
+    "Automation",
+    "Data processing",
+  ],
 };
 
 export const experience = [
@@ -34,17 +162,27 @@ export const experience = [
     bullets: [
       "Built and maintained product features for a recruiting platform, delivering UI components and backend-integrated workflows.",
       "Implemented responsive interfaces from Figma and iterated on usability with stakeholders.",
-      "Integrated front-end flows with Python REST endpoints; supported validation, error handling, and smooth UX.",
-      "Worked with Git workflows (branching, PRs, reviews) and maintained technical notes for handoffs.",
+      "Integrated front-end flows with Python REST endpoints while supporting validation, error handling, and smooth UX.",
+      "Worked with Git workflows including branching, pull requests, reviews, and technical handoff notes.",
     ],
     tags: ["React/Next.js", "Python", "REST", "Git", "Figma"],
+  },
+  {
+    title: "Digital Transformation Analyst — Baccanalle",
+    meta: "Co-op / Internship • 2026",
+    bullets: [
+      "Supported workflow improvement and process digitization across operational tasks.",
+      "Worked on structured tools, documentation, and digital systems to improve efficiency and organization.",
+      "Contributed to app and spreadsheet-based workflow thinking for practical business use cases.",
+    ],
+    tags: ["Digital transformation", "Operations", "Documentation", "Workflow design"],
   },
   {
     title: "Research Assistant — Applied Computing & Data Systems",
     meta: "University Research • 2024 – Present",
     bullets: [
       "Supported research software and scripts for structured data processing and analysis.",
-      "Helped with data cleaning and repeatable pipelines; validated outputs and documented workflow decisions.",
+      "Helped with data cleaning and repeatable pipelines while validating outputs and documenting workflow decisions.",
       "Communicated progress to technical and non-technical collaborators and adapted to evolving requirements.",
     ],
     tags: ["Python", "Data processing", "Documentation"],
@@ -62,8 +200,38 @@ export const experience = [
 
 export const projects = [
   {
+    name: "Summer Project Presentation",
+    desc: "Presentation deck highlighting my summer internship/co-op work, responsibilities, and outcomes.",
+    bullets: [
+      "Summarizes my role, contributions, tools used, and what I learned.",
+      "Shows growth in technical work, problem solving, and professional communication.",
+    ],
+    tags: ["Presentation", "Professional experience"],
+    links: [{ label: "Open Deck", href: "/presentations/summer-project.pdf" }],
+  },
+  {
+    name: "FroSho App Presentation",
+    desc: "Presentation for my freezer inventory and transaction tracking application.",
+    bullets: [
+      "Explains the app’s purpose, workflow, features, and practical use case.",
+      "Demonstrates app thinking, process logic, and user-centered design.",
+    ],
+    tags: ["AppSheet", "Inventory app", "Presentation"],
+    links: [{ label: "Open Deck", href: "/presentations/frosho-app.pdf" }],
+  },
+  {
+    name: "York Nexo",
+    desc: "Project deck for a real-time campus events platform.",
+    bullets: [
+      "Highlights the idea, interface, technical structure, and project direction.",
+      "Shows full-stack thinking, accessibility awareness, and maintainable design.",
+    ],
+    tags: ["Next.js", "Full-stack", "UI/UX"],
+    links: [{ label: "Open Deck", href: "/presentations/york-nexo.pdf" }],
+  },
+  {
     name: "AI Wrapper Class (Python)",
-    desc: "Reusable wrapper for consistent model calling, tracking, and comparison across prompts/tasks.",
+    desc: "Reusable Python wrapper for consistent model calling, tracking, and comparison across prompts and tasks.",
     bullets: [
       "Standardized calling and evaluation workflow with configurable parameters and structured logging.",
       "Focused on clean OOP design and practical debugging hooks for repeatable testing.",
@@ -71,26 +239,29 @@ export const projects = [
     tags: ["Python", "OOP", "Evaluation"],
     links: [{ label: "GitHub", href: "https://github.com/aseelele" }],
   },
-  {
-    name: "YorkNexo — Real-Time Campus Events Platform",
-    desc: "Full-stack web app for live campus event discovery with interactive UI and backend-connected flows.",
-    bullets: [
-      "Implemented REST-style endpoints and data-driven components; deployed updates through modern hosting workflows.",
-      "Emphasized performance, accessibility-minded structure, and maintainable code organization.",
-    ],
-    tags: ["Next.js", "REST", "UI/UX", "Deployment"],
-    links: [{ label: "GitHub", href: "https://github.com/aseelele" }],
-  },
-  {
-    name: "Systems/Architecture Coursework Projects",
-    desc: "Low-level and systems-focused builds reinforcing reliability, edge-case handling, and debugging.",
-    bullets: [
-      "Built and tested components involving structured problem-solving and careful validation.",
-    ],
-    tags: ["C/C++", "Debugging", "Systems"],
-    links: [],
-  },
 ];
+
+export const vision = {
+  statement: `
+My vision as a computer science and app engineer is rooted in both my technical passion and my lived experience. Growing up in a developing country, I witnessed firsthand how limitations in infrastructure, inefficient systems, and lack of access to digital tools can slow down progress and impact people’s quality of life.
+
+These experiences shaped my purpose: I don’t just want to build software, I want to build systems that enable growth, empower communities, and create opportunities where they are most needed. To me, engineering is not only about innovation, but about impact, using technology to bridge the gap between what exists and what is possible.
+
+I envision a future where digital systems transform developing regions by making essential services more accessible, efficient, and sustainable. Through applications that optimize resources, reduce waste, and digitize outdated processes, I aim to contribute to economies that are smarter, more connected, and more resilient.
+
+Beyond building systems, I see myself as a leader who contributes to shaping a culture of purposeful engineering. I want to help create environments where technology is driven not only by profit, but by long-term impact and sustainability.
+
+I often think of my work as building a “digital bridge”—connecting underserved communities to opportunities through technology. My goal is to create systems that continue to generate impact and help improve quality of life in developing regions.
+`,
+goals: [
+  "Analyze at least one workflow or system issue weekly and document solutions",
+  "Apply structured problem-solving (inputs, process, outputs) to major tasks",
+  "Learn and use at least three new digital tools during my co-op",
+  "Complete bi-weekly reflections to improve adaptability and growth mindset",
+  "Produce professional written documentation and reports with feedback",
+  "Present ideas clearly in professional and academic settings",
+],
+};
 
 export const education = {
   school: "York University",
@@ -102,5 +273,6 @@ export const education = {
     "Software Engineering",
     "Web Development",
     "AI/Logic",
+    "Computer Architecture",
   ],
 };

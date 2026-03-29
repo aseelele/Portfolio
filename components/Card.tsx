@@ -1,35 +1,42 @@
-export default function Card({
-  title,
-  meta,
-  bullets,
-  tags,
-  children,
-}: {
+import Tag from "@/components/Tag";
+
+type CardProps = {
   title: string;
   meta?: string;
   bullets?: string[];
   tags?: string[];
   children?: React.ReactNode;
-}) {
+};
+
+export default function Card({
+  title,
+  meta,
+  bullets = [],
+  tags = [],
+  children,
+}: CardProps) {
   return (
     <div className="card">
       <div className="cardTitle">{title}</div>
       {meta ? <div className="cardMeta">{meta}</div> : null}
-      {children}
-      {bullets?.length ? (
+
+      {bullets.length > 0 ? (
         <ul className="list">
-          {bullets.map((b) => (
-            <li key={b}>{b}</li>
+          {bullets.map((bullet) => (
+            <li key={bullet}>{bullet}</li>
           ))}
         </ul>
       ) : null}
-      {tags?.length ? (
+
+      {tags.length > 0 ? (
         <div className="tags">
-          {tags.map((t) => (
-            <span key={t} className="tag">{t}</span>
+          {tags.map((tag) => (
+            <Tag key={tag}>{tag}</Tag>
           ))}
         </div>
       ) : null}
+
+      {children}
     </div>
   );
 }

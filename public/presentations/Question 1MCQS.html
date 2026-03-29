@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Pattern Question</title>
+    <!-- Tailwind CSS CDN for basic styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #f0f4f8;
+            color: #334155;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 900px;
+            width: 100%;
+        }
+        pre {
+            background-color: #e2e8f0;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            line-height: 1.4;
+            color: #1a202c;
+        }
+        .output-box {
+            background-color: #f8fafc;
+            border: 1px solid #cbd5e1;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre; /* Preserve whitespace for pattern display */
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            color: #334155;
+        }
+        .question-section h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #1e293b;
+        }
+        .option-label {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .option-label:hover {
+            background-color: #f0f4f8;
+        }
+        .option-label input[type="checkbox"] { /* Changed to checkbox */
+            margin-right: 10px;
+        }
+        .feedback {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-align: center;
+        }
+        .feedback.correct {
+            background-color: #d1fae5; /* Green-100 */
+            color: #065f46; /* Green-800 */
+        }
+        .feedback.incorrect {
+            background-color: #fee2e2; /* Red-100 */
+            color: #991b1b; /* Red-800 */
+        }
+        button {
+            background-color: #3b82f6; /* Blue-500 */
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.2s;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #2563eb; /* Blue-600 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-2xl font-bold text-center mb-6 text-gray-800">Python Pyramid Pattern Question</h1>
+
+        <div class="question-section mb-6">
+            <h3 class="text-xl font-semibold mb-3">Problem Description:</h3>
+            <p class="mb-2">Develop a function to print the following pattern (Loop 2: Nested Loop Confusion):</p>
+            <p class="mb-2">Write a Python function that prints a centered pyramid of numbers, where each line forms a palindromic number pattern.</p>
+            <p class="mb-2"><strong>Input:</strong></p>
+            <ul class="list-disc list-inside ml-4 mb-2">
+                <li>A single positive integer `n` (1 ≤ n ≤ 10) representing the number of rows in the pyramid.</li>
+                <li>For this problem, assume `n = 5`.</li>
+            </ul>
+            <p class="mb-2"><strong>Output:</strong></p>
+            <ul class="list-disc list-inside ml-4 mb-4">
+                <li>Print `n` lines.</li>
+                <li>The `i`-th line should:</li>
+                <ul class="list-circle list-inside ml-8">
+                    <li>Start with enough spaces to center the line.</li>
+                    <li>Then print numbers from 1 to `i`.</li>
+                    <li>Then print numbers from `i-1` back down to 1.</li>
+                </ul>
+            </ul>
+
+            <p class="font-semibold mb-2">Expected Output (for n=5):</p>
+            <div class="output-box">
+    1
+   121
+  12321
+ 1234321
+123454321
+            </div>
+
+            <p class="font-semibold mb-2">Actual Output (from the original code for n=5):</p>
+            <div class="output-box">
+     
+    
+   1
+  12
+ 123
+            </div>
+
+            <p class="font-semibold mb-2">Original (Incorrect) Code:</p>
+            <pre>
+def print_pattern(n): 
+    for i in range(n): 
+        print(" " * (n - i), end="") 
+        for j in range(1, i):  
+            print(j, end="") 
+            for k in range(i-1, 0, 1): 
+                print(k, end="") 
+        print()
+            </pre>
+
+            <p class="font-semibold mb-2">Fixed Code:</p>
+            <pre>
+def print_pattern(n): 
+    for i in range(1, n + 1): 
+        print(" " * (n - i), end="")  # Centering the line
+
+        for j in range(1, i + 1):  # Ascending part
+            print(j, end="")
+
+        for k in range(i - 1, 0, -1):  # Descending part
+            print(k, end="")
+
+        print()  # Move to next line
+            </pre>
+        </div>
+
+        <div class="question-section mb-6">
+            <h3 class="text-xl font-semibold mb-4">What is wrong with the original code?</h3>
+            <form id="quizForm">
+                <label class="option-label">
+                    <input type="checkbox" name="answer" value="A">
+                    A. The ascending loop `range(1, i)` should include `i`, so it should be `range(1, i + 1)` to properly print the peak number.
+                </label>
+                <label class="option-label">
+                    <input type="checkbox" name="answer" value="B">
+                    B. The second for loop `range(i-1, 0, 1)` counts upward, which never executes because the start is greater than the end with a positive step.
+                </label>
+                <label class="option-label">
+                    <input type="checkbox" name="answer" value="C">
+                    C. The outer loop should start from `i = 1` rather than `i = 0` to avoid printing an empty first row and fix the alignment.
+                </label>
+                <label class="option-label">
+                    <input type="checkbox" name="answer" value="D">
+                    D. The print statement for spacing is incorrect; it should be `" "` * `i` instead of `" "` * `(n - i)` to align left.
+                </label>
+                <button type="button" onclick="checkAnswer()">Check Answer</button>
+            </form>
+            <div id="feedback" class="feedback hidden"></div>
+        </div>
+    </div>
+
+    <script>
+        function checkAnswer() {
+            const selectedOptions = document.querySelectorAll('input[name="answer"]:checked');
+            const feedbackDiv = document.getElementById('feedback');
+            feedbackDiv.classList.remove('hidden', 'correct', 'incorrect');
+
+            if (selectedOptions.length === 0) {
+                feedbackDiv.textContent = "Please select at least one answer.";
+                feedbackDiv.classList.add('incorrect');
+                return;
+            }
+
+            // Define all truly correct answers
+            const correctAnswers = ['A', 'B', 'C'];
+            let allSelectedAreCorrect = true;
+            let allCorrectAreSelected = true;
+            let selectedCount = 0;
+
+            const selectedValues = [];
+            selectedOptions.forEach(option => {
+                selectedValues.push(option.value);
+                selectedCount++;
+                if (!correctAnswers.includes(option.value)) {
+                    allSelectedAreCorrect = false; // User selected an incorrect option
+                }
+            });
+
+            correctAnswers.forEach(correctOption => {
+                if (!selectedValues.includes(correctOption)) {
+                    allCorrectAreSelected = false; // User missed a correct option
+                }
+            });
+
+            if (allSelectedAreCorrect && allCorrectAreSelected) {
+                feedbackDiv.textContent = "Correct! You've identified all the issues with the original code.";
+                feedbackDiv.classList.add('correct');
+            } else if (allSelectedAreCorrect && !allCorrectAreSelected) {
+                feedbackDiv.textContent = "Partially correct. You've selected only correct issues, but some correct issues might be missing. Review the code carefully!";
+                feedbackDiv.classList.add('incorrect'); // Still incorrect as not all correct ones are chosen
+            } else if (!allSelectedAreCorrect) {
+                feedbackDiv.textContent = "Incorrect. You have selected at least one incorrect option. Review the loop ranges and their behavior.";
+                feedbackDiv.classList.add('incorrect');
+            } else {
+                feedbackDiv.textContent = "Incorrect. Review the loop ranges and their behavior.";
+                feedbackDiv.classList.add('incorrect');
+            }
+        }
+    </script>
+</body>
+</html>

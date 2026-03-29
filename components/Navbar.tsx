@@ -1,20 +1,30 @@
 import Link from "next/link";
 
+const links = [
+  { href: "/about", label: "About" },
+  { href: "/skills", label: "Skills" },
+  { href: "/projects", label: "Projects" },
+  { href: "/vision", label: "Vision" },
+  { href: "/resume", label: "Resume" },
+  { href: "/connect", label: "Connect" },
+];
+
 export default function Navbar() {
   return (
-    <header className="nav">
-      <div className="container navInner">
+    <nav className="nav">
+      <div className="navInner">
         <Link href="/" className="brand">
-          <span className="dot" />
-          <span>Aseel</span>
+          Aseel Mohammed
         </Link>
 
-        <nav className="navLinks">
-          <Link className="navLink" href="/about">About</Link>
-          <Link className="navLink" href="/projects">Projects</Link>
-          <Link className="navLink" href="/resume">Resume</Link>
-        </nav>
+        <div className="navLinks">
+          {links.map((link) => (
+            <Link key={link.href} href={link.href} className="navLink">
+              {link.label}
+            </Link>
+          ))}
+        </div>
       </div>
-    </header>
+    </nav>
   );
 }
