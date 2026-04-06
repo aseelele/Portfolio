@@ -15,7 +15,7 @@ export default function VisionPage() {
           <div className="goalsLayout">
             <div className="goalsImageWrap">
               <img
-                src="/images/goals.jpg"
+                src="/images/Goals.jpg"
                 alt="Goals"
                 className="goalsImage"
               />

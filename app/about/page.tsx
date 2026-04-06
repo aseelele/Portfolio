@@ -15,7 +15,7 @@ export default function AboutPage() {
     <div className="card wideCard">
       <div className="essay withWrappedImage">
         <img
-          src="/images/can-cwic.jpg"
+          src="/images/Can-cwic.jpg"
           alt="Aseel at CAN-CWIC"
           className="wrappedEssayImage"
         />
