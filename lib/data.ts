@@ -13,6 +13,8 @@ I am motivated by identifying inefficiencies in real-world processes and transfo
 into clear, structured, and scalable solutions. What distinguishes me is my ability to work
 through ambiguity, question assumptions, and apply reflective thinking to continuously
 improve how problems are understood and solved.
+
+
 I grew up in an environment that emphasized discipline, resilience, and personal
 responsibility. From an early age, I learned that meaningful growth comes from sustained
 effort and self-reflection rather than shortcuts. These experiences shaped my work ethic and
@@ -26,6 +28,8 @@ which reinforced my confidence in my analytical abilities and confirmed my inter
 tackling complex problems. Since then, I have gravitated toward work involving digitization,
 data organization, workflow optimization, and analytical reasoning, particularly in situations
 where problems are not clearly defined and require careful analysis.
+
+
 One of my most influential inspirations has been a university professor who emphasized the
 importance of self-learning and continuous development, especially in a rapidly evolving field
 like computer science. Rather than focusing only on course material, they motivated
@@ -42,6 +46,7 @@ documenting assumptions and constraints, proposing multiple solutions, and refle
 how deeper analysis changes my initial approach. These goals are directly aligned with my
 development as a Computer Science student and support my long-term interest in
 digitization and data-driven problem-solving.
+
 My core values—integrity, growth, accountability, and impact—shape how I approach both
 academic and professional environments. I value doing work that improves processes,
 supports informed decision-making, and creates long-term value rather than temporary fixes.
@@ -53,29 +58,14 @@ workplace, this translates into a preference for environments that encourage
 experimentation, structured thinking, and feedback. I thrive in roles that involve digitization,
 data analysis, and continuous improvement, where learning is embedded into everyday
 problem-solving.
+
 As part of developing my professional identity, I have created a LinkedIn profile to
 intentionally present my skills, experiences, and interests. I understand that employers often
 form impressions quickly, and I aim to ensure that my digital presence accurately reflects
 both my technical direction and my growth mindset. This philosophy also guides how I
 approach my e-portfolio, which I view as a clear, scannable narrative of who I am, what I
-value, and how I approach complex problems.
-Curated Artifact and Explanation
-The artifact I selected combines a workflow diagram with the quote, “Learning how to learn is
-the most important skill in computer science.” Together, they represent both how I think and
-why I approach learning and problem-solving the way I do.
-The workflow illustrates my approach to digitization and critical thinking by showing the
-transition from an inefficient, unstructured real-world process to a structured, data-ready
-system. It begins with messy inputs such as inconsistent records and informal processes,
-followed by the identification of assumptions and constraints. Through digitization, these
-inputs are transformed into structured data that enables analysis, insight generation, and
-future machine learning applications. The final stage emphasizes reflection and iteration,
-reinforcing that learning and improvement continue even after a solution is implemented.
-The accompanying quote reflects a mindset that was strongly reinforced by my university
-professor and has become central to my development as a Computer Science student. It
-represents my belief that the ability to continuously learn, adapt, and reflect is more
-important than mastering any single tool or technology. Together, the workflow and quote
-capture my interest in digitization, my commitment to structured problem-solving, and my
-focus on long-term growth in data-driven and machine learning-oriented environments`,
+value, and how I approach complex problems.`,
+
 
   videoTitle: "About Me Video",
   videoEmbedUrl: "PASTE_YOUR_YOUTUBE_OR_DRIVE_EMBED_LINK_HERE",

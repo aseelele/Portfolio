@@ -7,6 +7,12 @@ export default function HomePage() {
   return (
     <Section title={profile.name} subtitle={profile.headline}>
       <div className="heroCard">
+
+        {/* IMAGE */}
+        <div className="imageContainer">
+          <img src="/images/york.jpg" alt="York University" className="heroImage" />
+        </div>
+
         <p className="p">{profile.summary}</p>
 
         <div className="tags">

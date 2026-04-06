@@ -10,12 +10,21 @@ export default function AboutPage() {
           <p className="p">{profile.summary}</p>
         </div>
       </Section>
-
-      <Section title="More about Me">
-  <div className="centerContent">
-    <div className="card fullWidthCard">
-      <div className="essay">
+<Section title="More about Me">
+  <div className="wideSection">
+    <div className="card wideCard">
+      <div className="essay withWrappedImage">
+        <img
+          src="/images/can-cwic.jpg"
+          alt="Aseel at CAN-CWIC"
+          className="wrappedEssayImage"
+        />
         {profile.aboutEssay}
+        <p>
+  The artifact I selected combines a workflow diagram with the quote,{" "}
+  <em>“Learning how to learn is the most important skill in computer science.”</em>
+  {" "}Together, they represent both how I think and why I approach learning and problem-solving the way I do.
+</p>
       </div>
     </div>
   </div>
