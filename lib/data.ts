@@ -200,7 +200,7 @@ export const experience = [
 
 export const projects = [
   {
-    name: "Summer Project Presentation",
+    name: "Summer Project ",
     desc: "Presentation deck highlighting my summer internship/co-op work, responsibilities, and outcomes.",
     bullets: [
       "Summarizes my role, contributions, tools used, and what I learned.",
@@ -210,7 +210,7 @@ export const projects = [
     links: [{ label: "Open Deck", href: "/presentations/summer-project.pdf" }],
   },
   {
-    name: "FroSho App Presentation",
+    name: "FroSho App ",
     desc: "Presentation for my freezer inventory and transaction tracking application.",
     bullets: [
       "Explains the app’s purpose, workflow, features, and practical use case.",
