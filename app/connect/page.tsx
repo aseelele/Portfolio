@@ -4,11 +4,13 @@ import { profile } from "@/lib/data";
 export default function ContactPage() {
   return (
     <Section title="Contact" subtitle="Let’s connect">
-      <div className="grid contactGrid">
-        <div className="col4">
+      <div className="grid">
+        <div className="col6">
           <div className="card">
             <div className="cardTitle">Socials</div>
-            <div className="cardMeta">Reach out through any of these platforms</div>
+            <div className="cardMeta">
+              Reach out through any of these platforms
+            </div>
 
             <div className="tags" style={{ marginTop: "16px" }}>
               <a
@@ -29,20 +31,19 @@ export default function ContactPage() {
                 GitHub
               </a>
 
-              <a
-                href={`mailto:${profile.links.email}`}
-                className="tag"
-              >
+              <a href={`mailto:${profile.links.email}`} className="tag">
                 Email
               </a>
             </div>
           </div>
         </div>
 
-        <div className="col8">
+        <div className="col6">
           <div className="card">
             <div className="cardTitle">Send Me a Message</div>
-            <div className="cardMeta">Write a message and send it to my email</div>
+            <div className="cardMeta">
+              Write a message and send it to my email
+            </div>
 
             <form
               action={`mailto:${profile.links.email}`}

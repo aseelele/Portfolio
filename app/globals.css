@@ -617,10 +617,6 @@ img {
     font-size: 0.95rem;
   }
 }
-.contactGrid {
-  align-items: stretch;
-}
-
 .contactForm {
   display: flex;
   flex-direction: column;
@@ -668,7 +664,7 @@ img {
 }
 
 .formGroup textarea {
-  min-height: 180px;
+  min-height: 220px;
   resize: vertical;
 }
 
