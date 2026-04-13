@@ -1,72 +1,97 @@
 import Section from "@/components/Section";
-import Card from "@/components/Card";
-import Tag from "@/components/Tag";
-import { education, experience, profile, skills } from "@/lib/data";
+import { profile } from "@/lib/data";
 
-export default function ResumePage() {
+export default function ContactPage() {
   return (
-    <>
-      <Section title="Resume" subtitle="Education, experience, and strengths">
-        <div className="grid">
-          <div className="col12">
-            <div className="card">
-              <div className="cardTitle">Core Strengths</div>
-              <div className="cardMeta">
-                Full-stack development • API integration • Data workflows • Agile collaboration
-              </div>
-              <div className="tags">
-                {skills.technical.slice(0, 10).map((s) => (
-                  <Tag key={s}>{s}</Tag>
-                ))}
-              </div>
+    <Section title="Contact" subtitle="Let’s connect">
+      <div className="grid contactGrid">
+        <div className="col4">
+          <div className="card">
+            <div className="cardTitle">Socials</div>
+            <div className="cardMeta">Reach out through any of these platforms</div>
+
+            <div className="tags" style={{ marginTop: "16px" }}>
+              <a
+                href={profile.links.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                className="tag"
+              >
+                LinkedIn
+              </a>
+
+              <a
+                href={profile.links.github}
+                target="_blank"
+                rel="noreferrer"
+                className="tag"
+              >
+                GitHub
+              </a>
+
+              <a
+                href={`mailto:${profile.links.email}`}
+                className="tag"
+              >
+                Email
+              </a>
             </div>
           </div>
         </div>
-      </Section>
 
-      <Section title="Education">
-        <div className="card">
-          <div className="cardTitle">{education.degree}</div>
-          <div className="cardMeta">
-            {education.school} • {education.grad}
-          </div>
+        <div className="col8">
+          <div className="card">
+            <div className="cardTitle">Send Me a Message</div>
+            <div className="cardMeta">Write a message and send it to my email</div>
 
-          <div className="hr" />
+            <form
+              action={`mailto:${profile.links.email}`}
+              method="POST"
+              encType="text/plain"
+              className="contactForm"
+            >
+              <div className="formRow">
+                <div className="formGroup">
+                  <label htmlFor="name">Name</label>
+                  <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                  />
+                </div>
 
-          <div className="cardTitle" style={{ fontSize: 14 }}>Relevant Coursework</div>
-          <div className="tags">
-            {education.coursework.map((course) => (
-              <Tag key={course}>{course}</Tag>
-            ))}
+                <div className="formGroup">
+                  <label htmlFor="email">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="Your email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="formGroup">
+                <label htmlFor="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Write your message here"
+                  rows={8}
+                  required
+                />
+              </div>
+
+              <button type="submit" className="primaryBtn">
+                Send Message
+              </button>
+            </form>
           </div>
         </div>
-      </Section>
-
-      <Section title="Experience">
-        <div className="grid">
-          {experience.map((item) => (
-            <div key={item.title} className="col12">
-              <Card
-                title={item.title}
-                meta={item.meta}
-                bullets={item.bullets}
-                tags={item.tags}
-              />
-            </div>
-          ))}
-        </div>
-      </Section>
-
-      <Section title="Resume File">
-        <a
-          href={profile.links.resume}
-          target="_blank"
-          rel="noreferrer"
-          className="deckLink"
-        >
-          View Resume
-        </a>
-      </Section>
-    </>
+      </div>
+    </Section>
   );
 }

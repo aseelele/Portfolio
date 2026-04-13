@@ -617,3 +617,85 @@ img {
     font-size: 0.95rem;
   }
 }
+.contactGrid {
+  align-items: stretch;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+  margin-top: 18px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  width: 100%;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.formGroup label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #dbe4ff;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+  font: inherit;
+  outline: none;
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.formGroup textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+.primaryBtn {
+  align-self: flex-start;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.primaryBtn:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.tags a.tag {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+}
