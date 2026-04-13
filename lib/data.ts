@@ -29,15 +29,7 @@ students to explore independent projects, tools, and technologies beyond the cur
 This approach reshaped how I view learning, reinforcing the idea that success in computer
 science depends not only on technical knowledge, but on the ability to continuously adapt,
 learn, and grow.
-Through critical reflection and a SWOT analysis completed earlier in the course, I identified
-several strengths I bring to employers, including critical thinking, adaptability, structured
-problem-solving, and clear communication. I also recognized an area for growth: at times, I
-relied too heavily on external validation before fully trusting my own reasoning. To address
-this weakness, I developed SMART goals focused on independently analyzing workflows,
-documenting assumptions and constraints, proposing multiple solutions, and reflecting on
-how deeper analysis changes my initial approach. These goals are directly aligned with my
-development as a Computer Science student and support my long-term interest in
-digitization and data-driven problem-solving.`,
+`,
 
 
   videoTitle: "About Me Video",
