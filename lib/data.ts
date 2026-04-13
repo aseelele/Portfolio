@@ -21,14 +21,6 @@ effort and self-reflection rather than shortcuts. These experiences shaped my wo
 encouraged me to take ownership of my learning and decisions. They also instilled in me a
 belief that improvement is an ongoing process built through consistency, accountability, and
 a willingness to learn from challenges.
-My decision to pursue Computer Science at York University was driven by my interest in
-problem-solving and the role technology plays in digitizing and improving systems. A
-defining academic moment in my journey was achieving a full score on a major board exam,
-which reinforced my confidence in my analytical abilities and confirmed my interest in
-tackling complex problems. Since then, I have gravitated toward work involving digitization,
-data organization, workflow optimization, and analytical reasoning, particularly in situations
-where problems are not clearly defined and require careful analysis.
-
 
 One of my most influential inspirations has been a university professor who emphasized the
 importance of self-learning and continuous development, especially in a rapidly evolving field
@@ -45,26 +37,7 @@ this weakness, I developed SMART goals focused on independently analyzing workfl
 documenting assumptions and constraints, proposing multiple solutions, and reflecting on
 how deeper analysis changes my initial approach. These goals are directly aligned with my
 development as a Computer Science student and support my long-term interest in
-digitization and data-driven problem-solving.
-
-My core values—integrity, growth, accountability, and impact—shape how I approach both
-academic and professional environments. I value doing work that improves processes,
-supports informed decision-making, and creates long-term value rather than temporary fixes.
-These values influence my work ethic by encouraging responsibility, openness to feedback,
-and a commitment to continuous learning, especially in technically demanding environments.
-My learning style is hands-on and reflective. I learn most effectively by applying concepts to
-real situations, evaluating outcomes, and refining my approach through reflection. In the
-workplace, this translates into a preference for environments that encourage
-experimentation, structured thinking, and feedback. I thrive in roles that involve digitization,
-data analysis, and continuous improvement, where learning is embedded into everyday
-problem-solving.
-
-As part of developing my professional identity, I have created a LinkedIn profile to
-intentionally present my skills, experiences, and interests. I understand that employers often
-form impressions quickly, and I aim to ensure that my digital presence accurately reflects
-both my technical direction and my growth mindset. This philosophy also guides how I
-approach my e-portfolio, which I view as a clear, scannable narrative of who I am, what I
-value, and how I approach complex problems.`,
+digitization and data-driven problem-solving.`,
 
 
   videoTitle: "About Me Video",
